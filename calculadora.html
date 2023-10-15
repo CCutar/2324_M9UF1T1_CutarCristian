@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+<!--Define un formulario que envía datos al archivo "calculadora.php" utilizando el método POST.-->
+<body>
+    <h1>Calculadora Online</h1>
+    <form action="calculadora.php" method="POST">
+        <label1>Tipo de operacion:</label1>
+        <select name="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicacion</option>
+            <option value="division">Division</option>
+            <option value="factorial">Factorial</option>
+            <option value="concatenar">Concatenar Strings</option>
+            <option value="eliminarSubstring">Eliminar Substring</option>
+            <br>
+        </select>
+        <br>
+        <label>First Number:</label>
+        <input type="text" name="numero1">
+        <br>
+        <label>Second Number:</label>
+        <input type="text" name="numero2">
+        <br>
+        <label>First String:</label>
+        <input type="text" name="string1">
+        <br>
+        <label>Second String:</label>
+        <input type="text" name="substring">
+        <br>
+        <input type="submit" name="submit" value="Calcular">
+        <br>
+        <p> Resutado: <?php if (isset($resultado)) {echo $resultado;} ?> </p>
+    </form>
+
+    <div class="historial">
+      <h1>Historial de Operaciones📜</h1>
+      <form class="Boton" method="POST">
+        <button class="botonEliminar" type="submit" name="limpiar_historial" title="Eliminar historial">
+          <h1>🗑️</h1>
+        </button>
+      </form>
+    </div>
+    
+      <div id="history">
+        <?php
+        monstrarHistorial();
+        ?>
+      </div> 
+    
+
+</body>
+</html>

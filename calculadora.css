@@ -1,0 +1,94 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7FFFD4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+h3 {
+    text-align: right;
+    background-color: #333;
+    color: #333;
+    padding: 10px;
+}
+
+/* Estilo para el formulario */
+form {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+label1 {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para etiquetas de formulario */
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para campos de entrada de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 0,5%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para la sección de resultados */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el historial de operaciones */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
